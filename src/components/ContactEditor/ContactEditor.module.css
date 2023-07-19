@@ -1,0 +1,32 @@
+.form {
+   display: inline-block;
+   width: 350px;
+   padding: 10px;
+   border: 1px solid grey;
+   border-radius: 3px;
+   margin-bottom: 20px;
+}
+.label {
+   display: block;
+   font-size: 20px;
+}
+.input {
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   border-radius: 3px;
+   border: 1px solid grey;
+}
+.input:focus,
+.input:hover {
+   box-shadow: 0 0 3px 3px rgba(62, 98, 255, 0.452);
+}
+.button {
+   background-color: white;
+   border-radius: 3px;
+   border: 1px solid grey;
+}
+.button:focus,
+.button:hover {
+   background-color: rgb(219, 219, 219);
+}
