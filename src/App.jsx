@@ -13,7 +13,7 @@ const App = () => {
     const contactsLocalStorage = localStorage.getItem('contacts');
     const paresdContacts = JSON.parse(contactsLocalStorage);
 
-    return paresdContacts
+    return paresdContacts.length !== 0
       ? paresdContacts
       : [
           { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -23,10 +23,6 @@ const App = () => {
         ];
   });
   const [filter, setFilter] = useState('');
-
-  useEffect(() => {
-    console.log('first localStorage.getItem');
-  }, []);
 
   // componentDidMount() {
   //   // console.log('App componentDidMount');
